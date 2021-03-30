@@ -7,11 +7,11 @@
                 <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
             </a>
 
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 header-style">
                 <li><a href="#" class="nav-link px-2 text-secondary">Acceuil</a></li>
                 <li><a [routerLink]="['/product-list']" [routerLinkActive]="['active']" class="nav-link px-2 text-white">Produit</a></li>
                 <li><a [routerLink]="['/product-add']" [routerLinkActive]="['active']" class="nav-link px-2 text-white">Disponible</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Commande</a></li>
+                <li><a [routerLink]="['/command']" class="nav-link px-2 text-white">Commande</a></li>
             </ul>
 
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">

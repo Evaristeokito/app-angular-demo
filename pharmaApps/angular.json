@@ -64,7 +64,8 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "pharmaApps:build"
+                        "browserTarget": "pharmaApps:build",
+                        "proxyConfig": "src/proxy.config.json"
                     },
                     "configurations": {
                         "production": {

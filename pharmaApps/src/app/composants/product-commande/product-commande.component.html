@@ -1,7 +1,5 @@
 <div class="section-header">
-    <h1>
-        LISTE DES PRODUITS
-    </h1>
+    <h1>LISTE DES COMMANDES</h1>
 </div>
 <div class="section-table">
     <div class="col-12 col-xs-12 container-center">
@@ -9,22 +7,23 @@
             <thead>
                 <tr>
                     <th>N</th>
-                    <th>PRODUCT</th>
+                    <th>COMMANDE</th>
+                    <th>PRODUIT COMMANDE</th>
                     <th>PRIX</th>
-                    <th>QTE</th>
-                    <th>STATUS</th>
-                    <th>FABRICANT</th>
+                    <th>QTE COMMANDEE</th>
+                    <th>DATE COMMANDEE</th>
                     <th colspan="2" class="text-center btn-style">actions</th>
                 </tr>
             </thead>
-            <tbody *ngFor="let prod of product  ; let i = index">
+            <tbody *ngFor="let cmd of commande; let i = index">
                 <tr>
-                    <th>{{i + 1}}</th>
-                    <td>{{prod.product}}</td>
-                    <td>{{prod.prix}}</td>
-                    <td>{{prod.qte}}</td>
-                    <td>{{prod.status}}</td>
-                    <td>{{prod.fabricant}}</td>
+                    <th>{{ i + 1 }}</th>
+                    <td>{{ cmd.numero_cmd }}</td>
+                    <td>{{ cmd.product.product }}</td>
+                    <td>{{ cmd.product.prix }}</td>
+                    <td>{{ cmd.qte_cmd }}</td>
+                    <td>{{ cmd.date_cmd | date: "dd/mm/yyyy" }}</td>
+
                     <td colspan="2" class="text-center">
                         <button type="button" class="btn btn-primary m-1">update</button>
                         <button type="button" class="btn btn-danger">delete</button>
