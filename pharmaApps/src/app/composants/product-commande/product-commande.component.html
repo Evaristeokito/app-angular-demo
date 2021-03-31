@@ -1,5 +1,5 @@
 <div class="section-header">
-    <h1>LISTE DES COMMANDES</h1>
+    <h1>MES COMMANDES</h1>
 </div>
 <div class="section-table">
     <div class="col-12 col-xs-12 container-center">
@@ -22,7 +22,7 @@
                     <td>{{ cmd.product.product }}</td>
                     <td>{{ cmd.product.prix }}</td>
                     <td>{{ cmd.qte_cmd }}</td>
-                    <td>{{ cmd.date_cmd | date: "dd/mm/yyyy" }}</td>
+                    <td>{{ cmd.date_cmd | date }}</td>
 
                     <td colspan="2" class="text-center">
                         <button type="button" class="btn btn-primary m-1">update</button>
